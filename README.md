@@ -119,6 +119,6 @@ On the other machine, always run `git pull` before starting to work.
 
 ## Links
 
-- GitHub: [Jaobast](https://github.com/Jaobast)
+- GitHub: [jbastos-code](https://github.com/jbastos-code)
 - LinkedIn: [joao-bastos-profil](https://www.linkedin.com/in/joao-bastos-profil/)
 - Instagram: [@joaobastos.web](https://www.instagram.com/joaobastos.web)

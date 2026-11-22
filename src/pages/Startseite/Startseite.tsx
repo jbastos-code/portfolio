@@ -77,7 +77,7 @@ function Startseite() {
                             />
 
                             <div className="socialmedia">
-                                <a href="https://github.com/Jaobast" target="_blank" rel="noreferrer">
+                                <a href="https://github.com/jbastos-code" target="_blank" rel="noreferrer">
                                     <img src="/portfolio/svg/socialmedia-github.svg" alt="github link" />
                                 </a>
                                 <a href="https://www.instagram.com/joaobastos.web" target="_blank" rel="noreferrer">
