@@ -1,4 +1,6 @@
-@font-face { font-family: 'Afacad' ;src: url('/public/font/Afacad-VariableFont_wght.ttf');}
+@font-face { font-family: 'Afacad' ;src: url('/font/Afacad-VariableFont_wght.ttf');}
+@font-face { font-family: 'Baloo 2' ;src: url('/font/Baloo2-Bold.ttf');}
+
 
 *{margin: 0; padding: 0; box-sizing: border-box;}
 
@@ -19,9 +21,10 @@
   --width-img-mobile: 25vw;
 
   --padding: 60px;
+  --padding-less: 32px;
   --border:40px;
 
-  --txt-h1: 60px;
+  --txt-h1: 44px;
   --txt-h2: 36px;
   --txt-h3: 28px;
   --txt-body: 22px;
@@ -38,12 +41,13 @@
 @media (max-width: 1439px) and (min-width: 767px) {
   :root {
     --padding: 16px;
+    --padding-less: 16px;
     --border: 32px;
 
     --gap-main:80px;
     --width-img-mobile: 25vw;
 
-    --txt-h1: 48px;
+    --txt-h1: 40px;
     --txt-h2: 34px;
     --txt-h3: 28px;
     --txt-body: 20px;
@@ -55,12 +59,13 @@
 @media (max-width: 768px) {
   :root {
     --padding: 12px;
+    --padding-less: 12px;
     --border: 24px;
     --gap: 20px;
     --gap-main:60px;
     --width-img-mobile: 40vw;
 
-    --txt-h1: 36px;
+    --txt-h1: 32px;
     --txt-h2: 28px;
     --txt-h3: 24px;
     --txt-body: 18px;
@@ -86,7 +91,7 @@ body{
 
 a{text-decoration: none; color: inherit; display: flex; cursor: pointer;}
 p{ font-size: var(--txt-body); color: var(--grey); font-weight: 300;}
-h1{ font-size: var(--txt-h1); font-weight: 500;}
+h1{ font-size: var(--txt-h1); font-weight: 300;}
 h2{ font-size: var(--txt-h2); font-weight: 500;}
 h3{ font-size: var(--txt-h3); font-weight: 500;}
 ul{list-style: none;}
@@ -97,7 +102,6 @@ h1{font-weight: 700;}
 .project{
   display: flex; flex-direction: column;
   gap: var(--gap-main);
-  padding-bottom: 20px;
   width: 100%;
   overflow: hidden;
 }

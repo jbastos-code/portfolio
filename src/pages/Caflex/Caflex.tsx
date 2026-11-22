@@ -6,6 +6,7 @@ import ProjectCode from '../../components/ProjectCode/ProjectCode'
 import Footer from '../../components/Footer/Footer'
 import NextProject from '../../components/NextProject/NextProject'
 import MotionImage from '../../components/MotionImage/MotionImage'
+import Typo from '../../components/Typo/Typo'
 
 function Caflex() {
 
@@ -32,7 +33,7 @@ function Caflex() {
             <br /><br />
             My responsibilities included designing the visual identity as well as conceptualizing and developing the app.
           </>}
-          tools={[
+          /* tools={[
               { key: 'icon-react', label: 'React'},
               { key: 'icon-node', label: 'Node.js'},
               { key: 'icon-tsx', label: 'TypeScript'},
@@ -41,7 +42,7 @@ function Caflex() {
               { key: 'icon-js', label: 'JavaScript'},
               { key: 'icon-figma', label: 'Figma'},
               { key: 'icon-git', label: 'Github'},
-          ]}
+          ]} */
           linkGithub='https://github.com/Jaobast/caflex'
           linkWebsite='https://jaobast.github.io/caflex/'
 
@@ -81,6 +82,8 @@ function Caflex() {
 
           <img className='img-project padding no-mobile' src="/portfolio/project/Caflex/bilder/06.png" alt="bild" />
           <img className='img-project padding only-mobile' src="/portfolio/project/Caflex/bilder/07.png" alt="bild" />
+
+          <Typo name='Libre Franklin' font="'Libre Franklin', sans-serif" />
 
 
           <ProjectText

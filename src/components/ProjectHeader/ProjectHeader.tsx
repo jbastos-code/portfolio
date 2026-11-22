@@ -33,12 +33,7 @@ function ProjectHeader({video, img, logo, name, description, descriptionEn, tool
                     </video>
                 )}
 
-                <div className="projectname-container text-block">
-                    <div className="projectname">
-                        <h1>{name}</h1>
-                        <h2>Briefing </h2>
-                    </div> 
-                </div>
+                <h1 className='text-block'>{name}</h1>
             </section>
 
             <section className='description text-block'>

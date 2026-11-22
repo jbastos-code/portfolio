@@ -1,0 +1,14 @@
+html:has(.Targobank), body:has(.Targobank) {
+  background-color: #203057;
+}
+
+.Targobank .Footer {
+  color: white;
+  & .text-block .infos-container .info-column .bold { color: white;}
+  & .text-block .titel { color: white;}
+}
+
+.Targobank{
+    & h1, h2, h3, main p, .text-bold{color: white;}
+    & main p{opacity: 0.6;}
+}

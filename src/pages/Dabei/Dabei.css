@@ -1,0 +1,14 @@
+html:has(.Dabei), body:has(.Dabei) {
+  background-color: #620F6F;
+}
+
+.Dabei .Footer {
+  color: white;
+  & .text-block .infos-container .info-column .bold { color: white;}
+  & .text-block .titel { color: white;}
+}
+
+.Dabei{
+    & h1, h2, h3, main p, .text-bold{color: white;}
+    & main p{opacity: 0.6;}
+}

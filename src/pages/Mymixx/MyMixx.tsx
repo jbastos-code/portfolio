@@ -6,6 +6,7 @@ import ProjectCode from '../../components/ProjectCode/ProjectCode'
 import Footer from '../../components/Footer/Footer'
 import NextProject from '../../components/NextProject/NextProject'
 import MotionImage from '../../components/MotionImage/MotionImage'
+import Typo from '../../components/Typo/Typo'
 
 function MyMixx() {
 
@@ -28,7 +29,7 @@ function MyMixx() {
             <br /><br />
             My responsibilities included expanding the visual identity, implementing the branding digitally, and designing and developing the ordering system.
             </>}
-            tools={[
+            /* tools={[
               { key: 'icon-react', label: 'React'},
               { key: 'icon-node', label: 'Node.js'},
               { key: 'icon-tsx', label: 'TypeScript'},
@@ -37,7 +38,7 @@ function MyMixx() {
               { key: 'icon-js', label: 'JavaScript'},
               { key: 'icon-figma', label: 'Figma'},
               { key: 'icon-git', label: 'Github'},
-            ]}
+            ]} */
             linkGithub='https://github.com/Jaobast/MyMixx'
             linkWebsite='https://jaobast.github.io/MyMixx/'
           />
@@ -81,6 +82,7 @@ function MyMixx() {
           <img className='img-project img-04 no-mobile' src="/portfolio/project/MyMixx/bilder/08.png" alt="bild" />
           <img className='img-project img-02 only-mobile' src="/portfolio/project/MyMixx/bilder/08.png" alt="bild" />
 
+          <Typo name='Baloo 2' font="'Baloo 2', cursive" />
 
           <ProjectText
             textTitel='Components'

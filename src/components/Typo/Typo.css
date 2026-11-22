@@ -1,0 +1,174 @@
+/*
+  Typo – Typografie-Komponente (Figma: Inter)
+  Schrift pro Projekt ändern:
+    1) per Prop:        <Typo font="'Playfair Display', serif">…</Typo>
+    2) per Projekt-CSS: .Mova { --typo-font: 'Playfair Display', serif; }
+*/
+
+.Typo {
+  --typo-font-default: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  font-family: var(--typo-font, var(--typo-font-default));
+  color: inherit;
+  margin: 0;
+}
+
+/* Headline [h1] – 50px · Medium · uppercase *//*
+  Typo – Schriftmuster (Figma: Inter)
+  Schrift ändern:  <Typo font="'Playfair Display', serif" />
+  Farbe: erbt von der Umgebung (color: inherit)
+*/
+
+.Typo {
+  --typo-font-default: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  column-gap: clamp(2rem, 20vw, 15rem);
+  row-gap: 3rem;
+  width: 100%;
+  box-sizing: border-box;
+  padding: clamp(1.5rem, 5vw, 4rem);
+
+  font-family: var(--typo-font-default);
+  color: inherit;
+}
+
+.Typo p {
+  margin: 0;
+}
+
+/* ---------- Linke Spalte: Font Family ---------- */
+
+.Typo__family {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.Typo__family-name {
+  font-size: clamp(1.5rem, 1.1rem + 1.4vw, 1.75rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.Typo__glyphs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: clamp(0.9375rem, 0.8rem + 0.5vw, 1.125rem);
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  word-spacing: 0.3em;
+  line-height: 1.4;
+}
+
+/* ---------- Rechte Spalte: Styles ---------- */
+
+.Typo__styles {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2rem, 4vw, 3rem);
+}
+
+.Typo__style {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.Typo__meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  column-gap: 1.5rem;
+  row-gap: 0.25rem;
+}
+
+.Typo__label {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.Typo__specs {
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+.Typo__specs b {
+  font-weight: 500;
+}
+
+/* ---------- Muster-Texte (responsive) ---------- */
+
+/* Headline [h1] – 50px · Medium · uppercase */
+.Typo__sample--h1 {
+  font-size: clamp(2rem, 1.2rem + 3vw, 3.125rem);
+  font-weight: 500;
+  line-height: 1.1;
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+}
+
+/* Title [h2] – 32px · Semi-Bold */
+.Typo__sample--h2 {
+  font-size: clamp(1.5rem, 1rem + 2vw, 2rem);
+  font-weight: 600;
+  line-height: 1.15;
+  overflow-wrap: break-word;
+}
+
+/* Subtitle [h3] – 24px · Bold */
+.Typo__sample--h3 {
+  font-size: clamp(1.125rem, 0.9rem + 1vw, 1.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  overflow-wrap: break-word;
+}
+
+/* Body – 20px · Light */
+.Typo__sample--body {
+  font-size: clamp(1rem, 0.75rem + 0.6vw, 1.25rem);
+  font-weight: 300;
+  line-height: 1.25;
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 768px) {
+  .Typo {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.Typo--h1 {
+  font-size: clamp(2rem, 1.2rem + 3vw, 3.125rem);
+  font-weight: 500;
+  line-height: 1.1;
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+}
+
+/* Title [h2] – 32px · Semi-Bold */
+.Typo--h2 {
+  font-size: clamp(1.5rem, 1rem + 2vw, 2rem);
+  font-weight: 600;
+  line-height: 1.15;
+  overflow-wrap: break-word;
+}
+
+/* Subtitle [h3] – 24px · Bold */
+.Typo--h3 {
+  font-size: clamp(1.125rem, 0.9rem + 1vw, 1.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  overflow-wrap: break-word;
+}
+
+/* Body – 20px · Light */
+.Typo--body {
+  font-size: clamp(1rem, 0.75rem + 0.6vw, 1.25rem);
+  font-weight: 300;
+  line-height: 1.25;
+}

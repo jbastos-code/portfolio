@@ -28,7 +28,7 @@ function Essencial() {
               <br /><br />
               The website highlights the therapist's professionalism and philosophy, while presenting the various services in a clear and accessible way.
             </>}
-            tools={[
+            /* tools={[
                 { key: 'icon-react', label: 'React'},
                 { key: 'icon-node', label: 'Node.js'},
                 { key: 'icon-tsx', label: 'TypeScript'},
@@ -36,7 +36,7 @@ function Essencial() {
                 { key: 'icon-css', label: 'CSS'},
                 { key: 'icon-js', label: 'JavaScript'},
                 { key: 'icon-figma', label: 'Figma'}
-              ]}
+              ]} */
           />
 
           <MotionImage

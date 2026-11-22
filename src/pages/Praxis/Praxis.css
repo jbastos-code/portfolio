@@ -1,3 +1,19 @@
+html:has(.Praxis), body:has(.Praxis) {
+  background-color: #6E88FF;
+}
+
+.Praxis .Footer {
+  color: white;
+  & .text-block .infos-container .info-column .bold { color: white;}
+  & .text-block .titel { color: white;}
+}
+
+.Praxis{
+    & h1, h2, h3, main p, .text-bold{color: white;}
+    & main p{opacity: 0.6;}
+}
+
+
 .Praxis{
     & .img-03{
         width: 60vw;

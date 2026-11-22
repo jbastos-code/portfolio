@@ -20,11 +20,11 @@ function Gleichklang() {
             <br /><br />
             Der MVP wird derzeit entwickelt. Vom Design bis zum Frontend und Backend.
             </>}
-            tools={[
+            /* tools={[
               { key: 'icon-figma', label: 'Figma'},
               { key: 'icon-ae', label: 'AfterEffects'},
               { key: 'icon-ai', label: 'Illustrator'},
-            ]}
+            ]} */
           />
 
           <NextProject thisProject='Gleichklang'/>

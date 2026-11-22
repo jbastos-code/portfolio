@@ -4,6 +4,7 @@ import ProjectHeader from '../../components/ProjectHeader/ProjectHeader'
 import {ProjectText, ProjectTextEn} from '../../components/ProjectText/ProjectText'
 import Footer from '../../components/Footer/Footer'
 import NextProject from '../../components/NextProject/NextProject'
+import Typo from '../../components/Typo/Typo'
 
 function Mova() {
 
@@ -67,6 +68,9 @@ function Mova() {
 
           <img className='img-project padding no-mobile' src="/portfolio/project/Mova/bilder/07.png" alt="bild" />
           <img className='img-project padding only-mobile' src="/portfolio/project/Mova/bilder/08.png" alt="bild" />
+
+
+          <Typo />
 
 
           <ProjectText

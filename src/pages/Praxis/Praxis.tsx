@@ -17,7 +17,7 @@ function Praxis() {
           <ProjectHeader
               name='Praxis Lounge'
               logo='/portfolio/project/Praxis/logo.svg'
-              video='/portfolio/project/Praxis/cover.mp4'
+              img='/portfolio/project/Praxis/cover.gif'
               description={<>
               Praxis Lounge ist eine mobile-first Chat-App für den Krankenhausalltag. Sie ermöglicht eine schnelle und klare Kommunikation zwischen Pflegekräften, selbst wenn sie auf verschiedene Stationen verteilt sind.
               <br /><br />
@@ -28,7 +28,7 @@ function Praxis() {
               <br /><br />
               The greatest challenge lies in the backend, which must support secure, stable, and high-performance real-time communication.
               </>}
-              tools={[
+              /* tools={[
                 { key: 'icon-react', label: 'React'},
                 { key: 'icon-node', label: 'Node.js'},
                 { key: 'icon-tsx', label: 'TypeScript'},
@@ -36,7 +36,7 @@ function Praxis() {
                 { key: 'icon-css', label: 'CSS'},
                 { key: 'icon-js', label: 'JavaScript'},
                 { key: 'icon-figma', label: 'Figma'}
-              ]}
+              ]} */
           />
 
           <MotionImage
