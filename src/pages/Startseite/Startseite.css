@@ -249,6 +249,8 @@
         background-color: white; color: var(--orange);
         outline: 1px solid var(--orange);
         outline-offset: -1px;
+
+        & svg{ height: 16px; width: 16px;}
     }
 
     .Startseite .about article .buttons button{

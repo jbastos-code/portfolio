@@ -14,10 +14,10 @@ Personal portfolio of João Bastos, Design Engineer (Frontend Dev & UX/UI). Buil
 ### 1. Go to the project folder
 
 ```bash
-cd "/Users/joaobastos/Desktop/João/Code/Portfolio/Portfolio"
+cd ~/Developer/Portfolio
 ```
 
-> The path contains spaces and a special character (`ã`), so it must be wrapped in quotes.
+> Keep the project outside iCloud-synced folders (Desktop, Documents). Use Git and GitHub to sync between machines.
 
 ### 2. Install dependencies
 
@@ -81,6 +81,41 @@ pkill -f vite
 
 **Font warnings in the terminal?**
 Use `/font/...` instead of `/public/font/...` in CSS paths. Files in `public/` are served from the root.
+
+## Commit Convention
+
+Commits follow the [Conventional Commits](https://www.conventionalcommits.org/) style:
+
+```
+type: short description in the imperative
+```
+
+GitHub already stores the date and time of each commit, so there is no need to add them to the message.
+
+### Types
+
+| Type       | When to use it                                          | Example                                        |
+| ---------- | ------------------------------------------------------- | ---------------------------------------------- |
+| `feat`     | A new feature, section or component                     | `feat: add resume button with icon`            |
+| `fix`      | A bug fix                                               | `fix: correct svg attributes for React`        |
+| `style`    | Visual changes (CSS, spacing, colors, typography)       | `style: align resume button with flex`         |
+| `content`  | Texts, translations, images, project descriptions       | `content: update German about text`            |
+| `refactor` | Code reorganization without changing the result         | `refactor: split Startseite into components`   |
+| `perf`     | Performance improvements                                | `perf: compress project images`                |
+| `docs`     | README and documentation                                | `docs: update project path in README`          |
+| `chore`    | Config, dependencies, build and deploy                  | `chore: fix font paths in CSS`                 |
+| `revert`   | Undo a previous commit                                  | `revert: remove test heading from Startseite`  |
+
+
+### Workflow
+
+```bash
+git add .
+git commit -m "feat: add resume button with icon"
+git push
+```
+
+On the other machine, always run `git pull` before starting to work.
 
 ## Links
 
