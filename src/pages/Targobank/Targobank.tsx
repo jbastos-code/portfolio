@@ -1,6 +1,7 @@
 import './Targobank.css'
+import '../Projectpage.css'
 import Nav from '../../components/Nav/Nav'
-import ProjectHeader from '../../components/ProjectHeader/ProjectHeader'
+import ProjectHeader from '../../components/Project/Header/ProjectHeader'
 import Footer from '../../components/Footer/Footer'
 import NextProject from '../../components/NextProject/NextProject'
 

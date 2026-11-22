@@ -28,7 +28,7 @@
   row-gap: 3rem;
   width: 100%;
   box-sizing: border-box;
-  padding: clamp(1.5rem, 5vw, 4rem);
+  padding: 0 8px;
 
   font-family: var(--typo-font-default);
   color: inherit;

@@ -1,5 +1,5 @@
 html:has(.MyMixx), body:has(.MyMixx) {
-  background-color: #D8EF84;
+  background-color: #9BC700;
 }
 
 .MyMixx{
@@ -31,4 +31,10 @@ html:has(.MyMixx), body:has(.MyMixx) {
     & .img-06{
         width: 60%;
     }
+}
+
+.MyMixx{
+    & .Footer .footer-link { color: black; }
+    & .Footer svg path,
+      .Footer svg line { fill: black; stroke: black; }
 }

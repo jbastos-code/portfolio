@@ -1,0 +1,14 @@
+.design{
+    & .visual{
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap)
+    }
+}
+
+.project{
+  display: flex; flex-direction: column;
+  gap: var(--gap-main);
+  width: 100%;
+  overflow: hidden;
+}

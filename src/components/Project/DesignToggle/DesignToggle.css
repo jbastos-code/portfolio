@@ -1,0 +1,35 @@
+/* Toggle pill. Colors can be overridden per project with CSS variables:
+   --toggle-bg, --toggle-active-bg, --toggle-active-color */
+
+.design-toggle {
+  display: flex;
+  gap: 4px;
+  width: fit-content;
+  margin-left: auto;
+  padding: 4px;
+  border-radius: 100px;
+  background: var(--toggle-bg, rgba(255, 255, 255, 0.12));
+}
+
+.design-toggle button {
+  padding: 4px 16px;
+  border: none;
+  border-radius: 100px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.design-toggle button[aria-pressed="true"] {
+  background: var(--toggle-active-bg, #fff);
+  color: var(--toggle-active-color, #000);
+}
+
+.design-toggle button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+/* .visual and .md are styled by you in each project (display is set by the component) */

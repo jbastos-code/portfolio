@@ -1,5 +1,4 @@
 .ProjectText{
-    padding: 0 var(--padding);
 
     & .titel{
         display: flex; flex-direction: column-reverse;

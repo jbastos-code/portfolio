@@ -25,7 +25,6 @@
 
 .NextProject{
     display: flex; flex-direction: column; gap: calc(var(--gap) / 1.5);
-    padding: 0 var(--padding);
 
     & h2{
             font-size: calc(var(--txt-h2) / 1.2);

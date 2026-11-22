@@ -1,6 +1,6 @@
 import './ProjectHeader.css'
-import { useLang } from '../../hooks/LangContext'
-import Tools from '../Tools/Tools'
+import { useLang } from '../../../hooks/LangContext'
+import Tools from '../../Tools/Tools'
 
 type ProjectHeaderProps = {
     video?: string,
