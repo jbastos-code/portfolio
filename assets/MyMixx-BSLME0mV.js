@@ -1,4 +1,4 @@
-import{t as e}from"./jsx-runtime-C0r-jb24.js";import{i as t,n,o as r,r as i}from"./index-DI4srWBL.js";import{n as a,t as o}from"./NextProject-u0RPljGY.js";import{n as s,t as c}from"./MotionImage-Di62ko9H.js";import{n as l,r as u,t as d}from"./DesignMd-Cd7gSMIw.js";var f=`---
+import{t as e}from"./jsx-runtime-C0r-jb24.js";import{i as t,n,o as r,r as i}from"./index-DyCqhciI.js";import{n as a,t as o}from"./NextProject-CGGoUAwt.js";import{n as s,t as c}from"./MotionImage-2nK4hFtT.js";import{n as l,r as u,t as d}from"./DesignMd-Cd7gSMIw.js";var f=`---
 version: alpha
 name: MyMixx
 description: Muesli store where everyone mixes their own muesli, from the base to the toppings. Colorful, playful, bold.
