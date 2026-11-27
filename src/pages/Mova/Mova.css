@@ -13,7 +13,7 @@ html:has(.Mova), body:has(.Mova) {
     
     & .logo-pattern{width: 15vw; margin: 0 auto;}
 
-    & h1, h2, h3, main p, .text-bold{color: white;}
+    & h1, h2, h3, main p, .text-bold, .ProjectFacts{color: white;}
     & main p{opacity: 0.6;}
 }
 
