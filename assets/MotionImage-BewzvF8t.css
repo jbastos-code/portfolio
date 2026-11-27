@@ -1,0 +1,1 @@
+.ProjectCode{max-width:var(--max-width)}.ProjectCode .ProjectCode__text{color:var(--md-muted);padding-left:calc(var(--indent,0) * 2ch)}.ProjectCode .ProjectCode__text :is(.code-red,.code-blue,.code-purple,.code-rosa){color:var(--md-text)}.ProjectCode .ProjectCode__text .code-gray{color:var(--md-muted)}

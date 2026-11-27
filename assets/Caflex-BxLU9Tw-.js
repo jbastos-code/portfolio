@@ -1,4 +1,4 @@
-import{t as e}from"./jsx-runtime-C0r-jb24.js";import{i as t,n,o as r,r as i}from"./index-BPdbuo-g.js";import{n as a,t as o}from"./NextProject-B2D2J53m.js";import{n as s,t as c}from"./MotionImage-DCIySW2b.js";import{n as l,r as u,t as d}from"./DesignMd-CRf9tF9F.js";var f=`---
+import{t as e}from"./jsx-runtime-C0r-jb24.js";import{i as t,n,o as r,r as i}from"./index-q1YVZW9W.js";import{n as a,t as o}from"./NextProject-Dmh9Y2zG.js";import{n as s,t as c}from"./MotionImage-D0VUXyC3.js";import{n as l,r as u,t as d}from"./DesignMd-B2hOifVl.js";var f=`---
 version: alpha
 name: Caflex
 description: App to discover the best cafés in your city, from cozy corner cafés to specialty coffee shops. Calm, focused, inviting.

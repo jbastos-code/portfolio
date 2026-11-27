@@ -1,4 +1,4 @@
-import{t as e}from"./jsx-runtime-C0r-jb24.js";import{i as t,n,o as r,r as i}from"./index-BPdbuo-g.js";import{n as a,t as o}from"./NextProject-B2D2J53m.js";import{n as s,r as c,t as l}from"./DesignMd-CRf9tF9F.js";var u=`---
+import{t as e}from"./jsx-runtime-C0r-jb24.js";import{i as t,n,o as r,r as i}from"./index-q1YVZW9W.js";import{n as a,t as o}from"./NextProject-Dmh9Y2zG.js";import{n as s,r as c,t as l}from"./DesignMd-B2hOifVl.js";var u=`---
 version: alpha
 name: Mova
 description: Online shop concept for handcrafted ceramic vases. Calm, earthy and timeless.
