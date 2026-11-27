@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'DM Mono';
+  src: url('/font/DMMono-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'DM Mono';
+  src: url('/font/DMMono-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+
+/* ------------------------------------------------------------------
+   DESIGN.md box
+   All colors come from two variables, so each project can tune them:
+     --md-ink      text color as "R G B"      (white for tone="light")
+     --md-surface  box background             (black 16% for tone="light")
+   The other shades are the ink color at different opacities.
+   ------------------------------------------------------------------ */
+.DesignMd {
+  --md-ink: 255 255 255;
+  --md-surface: rgb(0 0 0 / 0.16);
+
+  --md-text:   rgb(var(--md-ink) / 1);
+  --md-muted:  rgb(var(--md-ink) / 0.6);
+  --md-faint:  rgb(var(--md-ink) / 0.28);
+  --md-border: rgb(var(--md-ink) / 0.14);
+  --md-bar:    rgb(var(--md-ink) / 0.08);
+
+  width: 100%;
+  min-width: 0; /* never wider than its container */
+  margin: 0;
+  overflow: hidden;
+  border-radius: 40px;
+  background: var(--md-surface);
+  color: var(--md-text);
+  font-family: 'DM Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.DesignMd--dark {
+  --md-ink: 0 0 0;
+  --md-surface: rgb(255 255 255 / 0.16);
+}
+
+/* file bar */
+.DesignMd__bar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 30px 20px 0px 28px;
+}
+
+.DesignMd__icon { flex-shrink: 0; color: var(--md-text); }
+
+.DesignMd__meta {
+  display: flex; flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.DesignMd__file {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--md-text);
+}
+
+.DesignMd__description {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--md-muted);
+}
+
+/* code: long lines wrap (soft wrap) and keep their single line number */
+.DesignMd__code {
+  padding: 32px 32px 32px 24px;
+  font-size: 15px;
+  line-height: 26px;
+}
+
+.DesignMd__line {
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr);
+  column-gap: 28px;
+  align-items: start;
+}
+
+.DesignMd__number {
+  text-align: right;
+  color: var(--md-faint);
+  user-select: none;
+}
+
+.DesignMd__text {
+  font: inherit;
+  white-space: pre-wrap;      /* keep the spaces of tables, but wrap */
+  overflow-wrap: anywhere;    /* break very long tokens on small screens */
+  color: var(--md-text);
+}
+
+.DesignMd__strong { font-weight: 500; }
+
+/* tables: no wrapping, the rows scroll horizontally as one block */
+.DesignMd__table .DesignMd__number > span,
+.DesignMd__table .DesignMd__row {
+  display: block;
+}
+
+.DesignMd__table .DesignMd__text {
+  white-space: pre;
+  overflow-wrap: normal;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--md-faint) transparent;
+}
+
+.DesignMd__table .DesignMd__text:focus-visible {
+  outline: 2px solid var(--md-muted);
+  outline-offset: 2px;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .DesignMd { border-radius: var(--border); }
+
+  .DesignMd__bar { padding: 16px; gap: 10px; }
+  .DesignMd__description { font-size: 12px; }
+
+  .DesignMd__code {
+    padding: 20px 16px 20px 8px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .DesignMd__line {
+    grid-template-columns: 24px minmax(0, 1fr);
+    column-gap: 12px;
+  }
+}

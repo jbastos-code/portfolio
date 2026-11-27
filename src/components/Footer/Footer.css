@@ -1,4 +1,6 @@
-
+:root {
+  --footer-color:black
+}
 
 .Footer{
     padding: 120px 0 8px;
@@ -6,15 +8,15 @@
 
     display: flex; flex-direction: column;
 
-    & svg.logo{
+    & .joao-logo{
         width: 100%;;
         height: auto;
         opacity: 0.1;
-        overflow:visible
     }
 
-    & .footer-link{color: white; opacity:0.6}
-    & svg path, svg line {fill: white; stroke: white; opacity:0.6}
+    & .footer-link{color: var(--footer-color); opacity:0.6}
+    & .footer-link path{fill:var(--footer-color); stroke-width: 0;}
+    & svg path{stroke: var(--footer-color);}
 
     & .text-block{
         display: flex; justify-content: space-between;

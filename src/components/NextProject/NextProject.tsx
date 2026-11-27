@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import './NextProject.css'
-import { useLang } from '../../hooks/LangContext'
+import { useLang } from '../../hooks/useLang'
 
 const projects = ['Mova', 'MyMixx', 'Caflex', 'Essencial', 'Praxis', 'Targobank', 'Dabei', 'Gleichklang']
 
@@ -44,7 +44,7 @@ function NextProject({thisProject}: NextProjectProps) {
                         }
                         onClick={() => openProject(project)}
                     >
-                        <img src={`/portfolio/project/${project}/card.jpg`} alt={project} />
+                        <img loading="lazy" decoding="async" src={`/portfolio/project/${project}/card.webp`} alt={project} />
                     </button>
                 ))}
             </div>

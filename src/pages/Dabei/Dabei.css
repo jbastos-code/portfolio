@@ -12,3 +12,11 @@ html:has(.Dabei), body:has(.Dabei) {
     & h1, h2, h3, main p, .text-bold{color: white;}
     & main p{opacity: 0.6;}
 }
+
+/* Language toggle */
+.Dabei {
+    --lang-bg: rgb(0 0 0 / 0.16);
+    --lang-color: #fff;
+    --lang-active-bg: #fff;
+    --lang-active-color: #620F6F;
+}

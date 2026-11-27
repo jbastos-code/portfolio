@@ -15,7 +15,7 @@ function Targobank() {
           <ProjectHeader
             name='Targobank'
             logo='/portfolio/project/Targobank/logo.svg'
-            img='/portfolio/project/Targobank/cover.jpg'
+            img='/portfolio/project/Targobank/cover.webp'
             description={<>
             Projekt in Bearbeitung...
             </>}

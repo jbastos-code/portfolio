@@ -10,12 +10,18 @@
     padding-right: calc(var(--padding) + (var(--padding) / 2) + 250px);
     pointer-events: none;
 }
+/* Colors can be changed per page with CSS variables (defaults = Startseite):
+     --lang-bg            pill background
+     --lang-color         inactive language
+     --lang-active-bg     selected language background
+     --lang-active-color  selected language text            */
+
 .lang-toggle {
     width: fit-content;
     mix-blend-mode: normal;
     display: flex;
     align-items: center;
-    background-color: #e8e8e8;
+    background-color: var(--lang-bg, #e8e8e8);
     border-radius: 999px;
     padding: 4px;
     gap: 2px;
@@ -28,12 +34,16 @@
 
 .lang-toggle.faded { opacity: 0.6;}
 
+/* back to full opacity while hovering or using the keyboard */
+.lang-toggle.faded:hover,
+.lang-toggle.faded:focus-within { opacity: 1;}
+
 .lang-option {
   padding: 6px 16px;
   border-radius: 999px;
   border: none;
   background: transparent;
-  color: #1a1a1a;
+  color: var(--lang-color, #1a1a1a);
   font-size: calc(var(--txt-body) - 8px);
   font-weight: 500;
   cursor: url('/portfolio/img/cursor-pointer.png') 20 10, auto;
@@ -41,8 +51,8 @@
 }
 
 .lang-option.active {
-  background-color: #e03d1a; /* laranja do teu Figma */
-  color: #ffffff;
+  background-color: var(--lang-active-bg, #e03d1a); /* laranja do teu Figma */
+  color: var(--lang-active-color, #ffffff);
 }
 
 /* Tablet */

@@ -7,6 +7,8 @@ import Footer from '../../components/Footer/Footer'
 import NextProject from '../../components/NextProject/NextProject'
 import Typo from '../../components/Typo/Typo'
 import DesignToggle from '../../components/Project/DesignToggle/DesignToggle'
+import DesignMd from '../../components/Project/DesignMd/DesignMd'
+import movaDesignMd from './DESIGN.md?raw'
 
 function Mova() {
 
@@ -18,7 +20,7 @@ function Mova() {
         <ProjectHeader
           name='Mova'
           logo='/portfolio/project/Mova/logo.svg'
-          img='/portfolio/project/Mova/cover.jpg'
+          img='/portfolio/project/Mova/cover.webp'
           description={<>
             Mova ist ein Online-Shop-Konzept für handgefertigte Keramikvasen, das ein digitales Zuhause schafft, das genauso ruhig und zeitlos wirkt wie die Produkte selbst.
             <br /><br />
@@ -33,10 +35,11 @@ function Mova() {
             <br /><br />
             My goal was to bring honesty into the digital space. Clean layout, intuitive navigation, only what's necessary.
           </>}
+          media={<>
+            <img loading="lazy" decoding="async" className='img-project no-mobile' src="/portfolio/project/Mova/bilder/01.webp" alt="bild" />
+            <img loading="lazy" decoding="async" className='img-project only-mobile' src="/portfolio/project/Mova/bilder/02.webp" alt="bild" />
+          </>}
         />
-
-        <img className='img-project no-mobile' src="/portfolio/project/Mova/bilder/01.png" alt="bild" />
-        <img className='img-project only-mobile' src="/portfolio/project/Mova/bilder/02.png" alt="bild" />
 
         <ProjectText
           textTitel='Ästhetik. Erdig. Zeitlos'
@@ -61,18 +64,18 @@ function Mova() {
         <DesignToggle
           visual={
             <>
-              <img className='img-project no-mobile' src="/portfolio/project/Mova/bilder/05.png" alt="bild" />
-              <img className='img-project only-mobile' src="/portfolio/project/Mova/bilder/06.png" alt="bild" />
+              <img loading="lazy" decoding="async" className='img-project no-mobile' src="/portfolio/project/Mova/bilder/05.webp" alt="bild" />
+              <img loading="lazy" decoding="async" className='img-project only-mobile' src="/portfolio/project/Mova/bilder/06.webp" alt="bild" />
 
-              <img className='img-project padding no-mobile' src="/portfolio/project/Mova/bilder/07.png" alt="bild" />
-              <img className='img-project padding only-mobile' src="/portfolio/project/Mova/bilder/08.png" alt="bild" />
+              <img loading="lazy" decoding="async" className='img-project padding no-mobile' src="/portfolio/project/Mova/bilder/07.webp" alt="bild" />
+              <img loading="lazy" decoding="async" className='img-project padding only-mobile' src="/portfolio/project/Mova/bilder/08.webp" alt="bild" />
 
-              <img className='img-project padding no-mobile' src="/portfolio/project/Mova/bilder/03.png" alt="bild" />
-              <img className='img-project padding only-mobile' src="/portfolio/project/Mova/bilder/04.png" alt="bild" />
+              <img loading="lazy" decoding="async" className='img-project padding no-mobile' src="/portfolio/project/Mova/bilder/03.webp" alt="bild" />
+              <img loading="lazy" decoding="async" className='img-project padding only-mobile' src="/portfolio/project/Mova/bilder/04.webp" alt="bild" />
               <Typo />
             </>
           }
-          md={<p>Design.md</p>}
+          md={<DesignMd file='mova/DESIGN.md' content={movaDesignMd} />}
         />
 
 
@@ -98,7 +101,7 @@ function Mova() {
           </>}
         />
 
-        <img src="/portfolio/project/Mova/bilder/09.gif" alt="" className='img-project padding video01' />
+        <img loading="lazy" decoding="async" src="/portfolio/project/Mova/bilder/09.gif" alt="" className='img-project padding video01' />
 
         <ProjectText
           textTheme='PDP (Product Detail Page)'
@@ -118,7 +121,7 @@ function Mova() {
           </>}
         />
 
-        <img className='img-project padding' src="/portfolio/project/Mova/bilder/10.png" alt="bild" />
+        <img loading="lazy" decoding="async" className='img-project padding' src="/portfolio/project/Mova/bilder/10.webp" alt="bild" />
 
         <ProjectText
           textTheme='Einkaufstasche & Bestellung'
@@ -138,12 +141,12 @@ function Mova() {
           </>}
         />
 
-        <img src="/portfolio/project/Mova/bilder/11.gif" alt="" className='img-project padding video01' />
+        <img loading="lazy" decoding="async" src="/portfolio/project/Mova/bilder/11.gif" alt="" className='img-project padding video01' />
 
-        <img className='logo-pattern' src="/portfolio/project/Mova/logo.svg" alt="logo" />
+        <img loading="lazy" decoding="async" className='logo-pattern' src="/portfolio/project/Mova/logo.svg" alt="logo" />
 
-        <img className='img-project padding no-mobile' src="/portfolio/project/Mova/bilder/12.png" alt="bild" />
-        <img className='img-project padding only-mobile' src="/portfolio/project/Mova/bilder/13.png" alt="bild" />
+        <img loading="lazy" decoding="async" className='img-project padding no-mobile' src="/portfolio/project/Mova/bilder/12.webp" alt="bild" />
+        <img loading="lazy" decoding="async" className='img-project padding only-mobile' src="/portfolio/project/Mova/bilder/13.webp" alt="bild" />
 
 
         <NextProject thisProject='Mova' />

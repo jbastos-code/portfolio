@@ -38,12 +38,13 @@ function Essencial() {
                 { key: 'icon-js', label: 'JavaScript'},
                 { key: 'icon-figma', label: 'Figma'}
               ]} */
-          />
-
-          <MotionImage
-            img='/portfolio/project/Essencial/bilder/08.png'
-            padding
-            extraClass='img-04'
+            media={<>
+              <MotionImage
+                img='/portfolio/project/Essencial/bilder/08.webp'
+                padding
+                extraClass='img-04'
+              />
+            </>}
           />
 
           <ProjectText
@@ -66,7 +67,7 @@ function Essencial() {
             </>}
           />
 
-          <img className='img-project img-01' src="/portfolio/project/Essencial/bilder/04.png" alt="bild" />
+          <img loading="lazy" decoding="async" className='img-project img-01' src="/portfolio/project/Essencial/bilder/04.webp" alt="bild" />
 
           <ProjectText
             textTitel='Ruhig. Stark. Harmonisch'
@@ -88,11 +89,11 @@ function Essencial() {
             </>}
           />
 
-          <img className='img-project padding no-mobile' src="/portfolio/project/Essencial/bilder/05.png" alt="bild" />
-          <img className='img-project padding only-mobile' src="/portfolio/project/Essencial/bilder/06.png" alt="bild" />
+          <img loading="lazy" decoding="async" className='img-project padding no-mobile' src="/portfolio/project/Essencial/bilder/05.webp" alt="bild" />
+          <img loading="lazy" decoding="async" className='img-project padding only-mobile' src="/portfolio/project/Essencial/bilder/06.webp" alt="bild" />
 
-          <img className='img-project img-02 no-mobile' src="/portfolio/project/Essencial/bilder/07.png" alt="bild" />
-          <img className='img-project img-03 only-mobile' src="/portfolio/project/Essencial/bilder/07.png" alt="bild" />
+          <img loading="lazy" decoding="async" className='img-project img-02 no-mobile' src="/portfolio/project/Essencial/bilder/07.webp" alt="bild" />
+          <img loading="lazy" decoding="async" className='img-project img-03 only-mobile' src="/portfolio/project/Essencial/bilder/07.webp" alt="bild" />
 
           <ProjectText
             textTitel='React und Components'
@@ -119,7 +120,7 @@ function Essencial() {
           />
 
           <div className="img-mobile">
-            <img src="/portfolio/project/Essencial/bilder/11.png" alt="bild" />
+            <img loading="lazy" decoding="async" src="/portfolio/project/Essencial/bilder/11.webp" alt="bild" />
           </div>
 
           <ProjectCode
@@ -221,7 +222,7 @@ function Essencial() {
           />
 
           <div className="img-mobile">
-            <img src="/portfolio/project/Essencial/bilder/10.png" alt="bild" />
+            <img loading="lazy" decoding="async" src="/portfolio/project/Essencial/bilder/10.webp" alt="bild" />
           </div>
 
           <ProjectText
@@ -289,7 +290,7 @@ function Essencial() {
 
 
           <MotionImage
-            img='/portfolio/project/Essencial/bilder/09.png'
+            img='/portfolio/project/Essencial/bilder/09.webp'
             padding
             extraClass='img-05'
           />

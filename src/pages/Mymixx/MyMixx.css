@@ -33,8 +33,18 @@ html:has(.MyMixx), body:has(.MyMixx) {
     }
 }
 
-.MyMixx{
-    & .Footer .footer-link { color: black; }
-    & .Footer svg path,
-      .Footer svg line { fill: black; stroke: black; }
+/* View Toggle: light page, so black labels on a white translucent pill (like the DesignMd box) */
+.MyMixx .design {
+    --toggle-bg: rgb(255 255 255 / 0.16);
+    --toggle-color: #000;
+    --toggle-active-bg: #fff;
+    --toggle-active-color: #000;
+}
+
+/* Language toggle */
+.MyMixx {
+    --lang-bg: rgb(255 255 255 / 0.16);
+    --lang-color: #000;
+    --lang-active-bg: #fff;
+    --lang-active-color: #000;
 }

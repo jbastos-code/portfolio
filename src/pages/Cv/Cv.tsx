@@ -1,6 +1,6 @@
 import './Cv.css'
 import { useBodyClass } from "../../hooks/useBodyClass"
-import { useLang } from '../../hooks/LangContext'
+import { useLang } from '../../hooks/useLang'
 
 
 function Cv() {
@@ -10,7 +10,6 @@ function Cv() {
 
     const download = () => {
         const link = document.createElement("a");
-        link.href = "/portfolio/img/Bastos-Lebenslauf.pdf";
         link.href = lang === "de" ? "/portfolio/img/Bastos-Lebenslauf.pdf" : "/portfolio/img/Bastos-Resume.pdf";
         link.download = lang === "de" ? "Bastos-Lebenslauf.pdf" : "Bastos-Resume.pdf";
         link.click();
@@ -20,8 +19,8 @@ function Cv() {
     <div className='Cv'>
         <div className="container">
             {lang === "de" ?
-                <img src="/portfolio/img/Bastos-Lebenslauf.png" alt="Lebenslauf" className='lebenslauf'/> : 
-                <img src="/portfolio/img/Bastos-Resume.png" alt="Resume" className='lebenslauf'/>
+                <img src="/portfolio/img/Bastos-Lebenslauf.webp" alt="Lebenslauf" className='lebenslauf'/> : 
+                <img src="/portfolio/img/Bastos-Resume.webp" alt="Resume" className='lebenslauf'/>
              }
             
             <button onClick={download}>

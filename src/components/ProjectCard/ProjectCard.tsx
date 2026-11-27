@@ -24,11 +24,16 @@ function ProjectCard({img, name, nameLink, tag}: cardProps) {
     }
 
   return (
-    <div className='ProjectCard' onClick={openProject}
-    
+    <div
+        className='ProjectCard'
+        role="link"
+        tabIndex={0}
+        aria-label={name}
+        onClick={openProject}
+        onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openProject() } }}
     >
         <div className="img-container">
-            <motion.img src={img} alt="project cover"
+            <motion.img loading="lazy" decoding="async" src={img} alt="project cover"
                 initial={{ opacity: 0, scale: 0.8 }}
 
                 whileInView={{
@@ -50,8 +55,8 @@ function ProjectCard({img, name, nameLink, tag}: cardProps) {
                 amount: "some",
                 }}
             />
-            <button className="bttn">
-                <img src="/portfolio/svg/arrow-open.svg" alt="arrow icon" />
+            <button className="bttn" tabIndex={-1} aria-hidden="true">
+                <img loading="lazy" decoding="async" src="/portfolio/svg/arrow-open.svg" alt="arrow icon" />
             </button>
         </div>
         <div className="name-container">

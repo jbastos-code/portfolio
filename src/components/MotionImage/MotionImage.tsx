@@ -24,7 +24,7 @@ function MotionImage({img, noMobile, onlyMobile, height, padding, extraClass}: M
 
 
   return (
-    <motion.img className={classes} src={img} alt="visual presentation"
+    <motion.img loading="lazy" decoding="async" className={classes} src={img} alt="visual presentation"
        initial={{ opacity: 0, scale: 0.8 }}
         
        whileInView={{

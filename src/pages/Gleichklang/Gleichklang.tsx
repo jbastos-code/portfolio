@@ -15,7 +15,7 @@ function Gleichklang() {
           <ProjectHeader
             name='Gleichklang'
             logo='/portfolio/project/Gleichklang/logo.svg'
-            img='/portfolio/project/Gleichklang/cover.jpg'
+            img='/portfolio/project/Gleichklang/cover.webp'
             description={<>
             Dabei ist ein Social-Media-Netzwerk, das dich über alle Events in deiner Nähe auf dem Laufenden hält. Entdecke, was gerade um dich herum passiert, folge deinen Freunden oder den Hosts deiner Lieblingsveranstaltungen.  Verpasse nie wieder ein spannendes Event.
             <br /><br />

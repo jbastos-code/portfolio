@@ -42,3 +42,11 @@ html:has(.Praxis), body:has(.Praxis) {
     }
 
 }
+
+/* Language toggle */
+.Praxis {
+    --lang-bg: rgb(0 0 0 / 0.16);
+    --lang-color: #fff;
+    --lang-active-bg: #fff;
+    --lang-active-color: #000;
+}

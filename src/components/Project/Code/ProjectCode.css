@@ -1,35 +1,24 @@
-.ProjectCode{
-    padding: 0 var(--padding);
-    margin: calc( -1 * var(--gap)) 0;
+/* ProjectCode uses the DesignMd box (DesignMd.css) and only adds:
+   - muted plain code, highlighted keywords
+   - indentation per line
+   - max width (800px on tablet/desktop, full width on mobile)       */
 
-    & .text-block{
-        display: flex; flex-direction: column;
-        gap: calc(var(--gap)/ 1.7);
-    }
-
-    & p{
-        font-family: monospace;
-        font-size: calc(var(--txt-body) / 1.4) ;
-    }
+.ProjectCode {
+    max-width: var(--max-width);
 }
 
-.line{
-    display: flex;
+.ProjectCode .ProjectCode__text {
+    color: var(--md-muted);
+    /* wrapped lines keep their indentation */
+    padding-left: calc(var(--indent, 0) * 2ch);
 }
 
-.line1 { gap: calc( 1 * (var(--gap) / 1.5)) }
-.line2 { gap: calc( 2 * (var(--gap) / 1.5)) }
-.line3 { gap: calc( 3 * (var(--gap) / 1.5)) }
-.line4 { gap: calc( 4 * (var(--gap) / 1.5)) }
-.line5 { gap: calc( 5 * (var(--gap) / 1.5)) }
-.line6 { gap: calc( 6 * (var(--gap) / 1.5)) }
-
-.code-text{
-    margin-left: var(--gap);
+/* the marked words (code-red, code-blue, code-purple, code-rosa) at 100% */
+.ProjectCode .ProjectCode__text :is(.code-red, .code-blue, .code-purple, .code-rosa) {
+    color: var(--md-text);
 }
 
-/* cores */
-.code-red    { color: var(--code-red); }
-.code-blue   { color: var(--code-blue);}
-.code-purple { color: var(--code-purple); }
-.code-rosa { color: var(--code-rosa); }
+/* code-gray stays muted, like plain code */
+.ProjectCode .ProjectCode__text .code-gray {
+    color: var(--md-muted);
+}

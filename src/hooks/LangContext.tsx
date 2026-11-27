@@ -1,24 +1,28 @@
-import { createContext, useContext, useState } from "react"
+import { useEffect, useState } from "react"
+import { LangContext, type Lang } from "./useLang"
 
-type Lang = "de" | "en"
-
-type LangContextType = {
-  lang: Lang
-  setLang: (lang: Lang) => void
+function readStoredLang(): Lang {
+  try {
+    const stored = localStorage.getItem("lang")
+    return stored === "en" ? "en" : "de"
+  } catch {
+    return "de"
+  }
 }
 
-export const LangContext = createContext<LangContextType>({
-  lang: "de",
-  setLang: () => {}
-})
-
 export function LangProvider({ children }: { children: React.ReactNode }) {
-  const [lang, setLang] = useState<Lang>(
-    () => (localStorage.getItem("lang") as Lang) ?? "de"
-  )
+  const [lang, setLang] = useState<Lang>(readStoredLang)
+
+  useEffect(() => {
+    document.documentElement.lang = lang
+  }, [lang])
 
   const handleSetLang = (newLang: Lang) => {
-    localStorage.setItem("lang", newLang)
+    try {
+      localStorage.setItem("lang", newLang)
+    } catch {
+      // storage unavailable (e.g. private mode) – keep the choice in memory only
+    }
     setLang(newLang)
   }
 
@@ -28,5 +32,3 @@ export function LangProvider({ children }: { children: React.ReactNode }) {
     </LangContext.Provider>
   )
 }
-
-export const useLang = () => useContext(LangContext)

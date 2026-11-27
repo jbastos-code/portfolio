@@ -8,6 +8,9 @@ import Footer from '../../components/Footer/Footer'
 import NextProject from '../../components/NextProject/NextProject'
 import MotionImage from '../../components/MotionImage/MotionImage'
 import Typo from '../../components/Typo/Typo'
+import DesignToggle from '../../components/Project/DesignToggle/DesignToggle'
+import DesignMd from '../../components/Project/DesignMd/DesignMd'
+import caflexDesignMd from './DESIGN.md?raw'
 
 function Caflex() {
 
@@ -19,7 +22,7 @@ function Caflex() {
           <ProjectHeader
           name='Caflex'
           logo='/portfolio/project/Caflex/logo.svg'
-          img='/portfolio/project/Caflex/cover.jpg'
+          img='/portfolio/project/Caflex/cover.webp'
           description={<>
             Wo gibt's den besten Kaffee in der Stadt?
             <br /><br />
@@ -43,22 +46,22 @@ function Caflex() {
               { key: 'icon-js', label: 'JavaScript'},
               { key: 'icon-figma', label: 'Figma'},
               { key: 'icon-git', label: 'Github'},
-          ]} */
-          linkGithub='https://github.com/Jaobast/caflex'
-          linkWebsite='https://jaobast.github.io/caflex/'
+              linkGithub='https://github.com/jbastos-code/caflex'
+              linkWebsite='https://jbastos-code.github.io/caflex/'
+              ]} */
 
-          />
-
-          <MotionImage
-            img='/portfolio/project/Caflex/bilder/01.png'
-            noMobile
-            extraClass='img-03'
-          />
-
-          <MotionImage
-            img='/portfolio/project/Caflex/bilder/01.png'
-            onlyMobile
-            extraClass='img-01'
+            media={<>
+              <MotionImage
+                img='/portfolio/project/Caflex/bilder/01.webp'
+                noMobile
+                extraClass='img-03'
+              />
+              <MotionImage
+                img='/portfolio/project/Caflex/bilder/01.webp'
+                onlyMobile
+                extraClass='img-01'
+              />
+            </>}
           />
 
           <ProjectText
@@ -81,10 +84,17 @@ function Caflex() {
             </>}
           />
 
-          <img className='img-project padding no-mobile' src="/portfolio/project/Caflex/bilder/06.png" alt="bild" />
-          <img className='img-project padding only-mobile' src="/portfolio/project/Caflex/bilder/07.png" alt="bild" />
+          <DesignToggle
+            visual={
+              <>
+                <img loading="lazy" decoding="async" className='img-project padding no-mobile' src="/portfolio/project/Caflex/bilder/06.webp" alt="bild" />
+                <img loading="lazy" decoding="async" className='img-project padding only-mobile' src="/portfolio/project/Caflex/bilder/07.webp" alt="bild" />
 
-          <Typo name='Libre Franklin' font="'Libre Franklin', sans-serif" />
+                <Typo name='Libre Franklin' font="'Libre Franklin', sans-serif" />
+              </>
+            }
+            md={<DesignMd file='caflex/DESIGN.md' content={caflexDesignMd} />}
+          />
 
 
           <ProjectText
@@ -99,7 +109,7 @@ function Caflex() {
 
 
           <div className="img-mobile">
-            <img src="/portfolio/project/Caflex/videos/03.gif" alt=""/>
+            <img loading="lazy" decoding="async" src="/portfolio/project/Caflex/videos/03.gif" alt=""/>
           </div>
 
           <ProjectText
@@ -124,7 +134,7 @@ function Caflex() {
             </>}
           />
 
-          <img src="/portfolio/project/Caflex/videos/02.gif" className='video-02' alt=""/>
+          <img loading="lazy" decoding="async" src="/portfolio/project/Caflex/videos/02.gif" className='video-02' alt=""/>
 
           <ProjectCode
             lines={[
@@ -162,7 +172,7 @@ function Caflex() {
             </>}
           />
 
-          <img src="/portfolio/project/Caflex/videos/01.gif" className='video-01' alt=""/>
+          <img loading="lazy" decoding="async" src="/portfolio/project/Caflex/videos/01.gif" className='video-01' alt=""/>
 
           <ProjectCode
             lines={[
@@ -208,8 +218,8 @@ function Caflex() {
           />
 
           <div className="img-mobile">
-            <img src="/portfolio/project/Caflex/bilder/04.png" alt="bild" />
-            <img src="/portfolio/project/Caflex/bilder/05.png" alt="bild" />
+            <img loading="lazy" decoding="async" src="/portfolio/project/Caflex/bilder/04.webp" alt="bild" />
+            <img loading="lazy" decoding="async" src="/portfolio/project/Caflex/bilder/05.webp" alt="bild" />
           </div>
 
           <ProjectText
@@ -233,7 +243,7 @@ function Caflex() {
           />
 
           <MotionImage
-            img='/portfolio/project/Caflex/bilder/08.png'
+            img='/portfolio/project/Caflex/bilder/08.webp'
             extraClass='img-02'
           />
 

@@ -1,5 +1,5 @@
 import './ProjectText.css'
-import { useLang } from '../../hooks/LangContext'
+import { useLang } from '../../hooks/useLang'
 
 type ProjectTextProps = {
     textTitel?: string,

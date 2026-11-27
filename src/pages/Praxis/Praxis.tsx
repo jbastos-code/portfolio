@@ -38,17 +38,17 @@ function Praxis() {
                 { key: 'icon-js', label: 'JavaScript'},
                 { key: 'icon-figma', label: 'Figma'}
               ]} */
-          />
-
-          <MotionImage
-            img='/portfolio/project/Praxis/bilder/06.png'
-            noMobile
-            extraClass='img-03'
-          />
-
-          <MotionImage
-            img='/portfolio/project/Praxis/bilder/07.png'
-            onlyMobile
+            media={<>
+              <MotionImage
+                img='/portfolio/project/Praxis/bilder/06.webp'
+                noMobile
+                extraClass='img-03'
+              />
+              <MotionImage
+                img='/portfolio/project/Praxis/bilder/07.webp'
+                onlyMobile
+              />
+            </>}
           />
 
           <ProjectText
@@ -75,8 +75,8 @@ function Praxis() {
             </>}
           />
 
-          <img className='img-project img-02 no-mobile' src="/portfolio/project/Praxis/bilder/01.png" alt="Visual Design" />
-          <img className='img-project img-03 only-mobile' src="/portfolio/project/Praxis/bilder/02.png" alt="Visual Design" />
+          <img loading="lazy" decoding="async" className='img-project img-02 no-mobile' src="/portfolio/project/Praxis/bilder/01.webp" alt="Visual Design" />
+          <img loading="lazy" decoding="async" className='img-project img-03 only-mobile' src="/portfolio/project/Praxis/bilder/02.webp" alt="Visual Design" />
 
           <ProjectText
             textTitel='Verlässich und modern'
@@ -98,8 +98,8 @@ function Praxis() {
             </>}
           />
 
-          <img className='img-project padding no-mobile' src="/portfolio/project/Praxis/bilder/04.png" alt="Visual Design" />
-          <img className='img-project padding only-mobile' src="/portfolio/project/Praxis/bilder/03.png" alt="Visual Design" />
+          <img loading="lazy" decoding="async" className='img-project padding no-mobile' src="/portfolio/project/Praxis/bilder/04.webp" alt="Visual Design" />
+          <img loading="lazy" decoding="async" className='img-project padding only-mobile' src="/portfolio/project/Praxis/bilder/03.webp" alt="Visual Design" />
 
           <ProjectText
             textTitel='Components'
@@ -112,7 +112,7 @@ function Praxis() {
           />
 
           <div className="img-mobile">
-            <img src="/portfolio/project/Praxis/bilder/08.png" alt="mockup" />
+            <img loading="lazy" decoding="async" src="/portfolio/project/Praxis/bilder/08.webp" alt="mockup" />
           </div>
 
           <ProjectText
@@ -194,8 +194,8 @@ function Praxis() {
           />
 
           <div className="img-mobile">
-            <img src="/portfolio/project/Praxis/bilder/09.png" alt="bild" />
-            <img src="/portfolio/project/Praxis/bilder/10.png" alt="bild" />
+            <img loading="lazy" decoding="async" src="/portfolio/project/Praxis/bilder/09.webp" alt="bild" />
+            <img loading="lazy" decoding="async" src="/portfolio/project/Praxis/bilder/10.webp" alt="bild" />
           </div>
 
           <ProjectText
@@ -303,7 +303,7 @@ function Praxis() {
           />
 
           <div className="img-mobile">
-            <img src="/portfolio/project/Praxis/bilder/12.png" alt="bild" />
+            <img loading="lazy" decoding="async" src="/portfolio/project/Praxis/bilder/12.webp" alt="bild" />
           </div>
 
           <ProjectText
@@ -375,7 +375,7 @@ function Praxis() {
           />
 
           <div className="img-mobile">
-            <img src="/portfolio/project/Praxis/bilder/13.png" alt="bild" />
+            <img loading="lazy" decoding="async" src="/portfolio/project/Praxis/bilder/13.webp" alt="bild" />
           </div>
 
           <ProjectText
@@ -480,7 +480,7 @@ function Praxis() {
             ]}
           />
 
-          <img className='img-project padding img-04' src="/portfolio/project/Praxis/bilder/11.png" alt="bild" />
+          <img loading="lazy" decoding="async" className='img-project padding img-04' src="/portfolio/project/Praxis/bilder/11.webp" alt="bild" />
 
           <NextProject thisProject='Praxis'/>
 

@@ -9,6 +9,8 @@ html:has(.Caflex), body:has(.Caflex) {
 }
 
 .Caflex{
+    --footer-color: white;
+    
     & h1, h2, h3, main p, .text-bold{color: white;}
     & main p{opacity: 0.6;}
 }
@@ -75,4 +77,15 @@ html:has(.Caflex), body:has(.Caflex) {
         }
         & .video-01, .video-02 { width: 100%;}
     }
+}
+
+/* View Toggle */
+.Caflex .design { --toggle-active-color: #002B8A; }
+
+/* Language toggle */
+.Caflex {
+    --lang-bg: rgb(0 0 0 / 0.16);
+    --lang-color: #fff;
+    --lang-active-bg: #fff;
+    --lang-active-color: #002B8A;
 }

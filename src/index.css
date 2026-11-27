@@ -1,5 +1,15 @@
-@font-face { font-family: 'Afacad' ;src: url('/font/Afacad-VariableFont_wght.ttf');}
-@font-face { font-family: 'Baloo 2' ;src: url('/font/Baloo2-Bold.ttf');}
+@font-face {
+  font-family: 'Afacad';
+  src: url('/font/Afacad-VariableFont_wght.woff2') format('woff2');
+  font-weight: 400 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Baloo 2';
+  src: url('/font/Baloo2-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
 
 
 *{margin: 0; padding: 0; box-sizing: border-box;}
@@ -30,6 +40,9 @@
   --txt-body: 22px;
 
   --max-width: 800px;
+
+  /* visible height of the fixed nav (32px top + language toggle) */
+  --nav-height: 68px;
 }
 
 /* Desktop */
@@ -69,7 +82,7 @@
     --txt-h2: 28px;
     --txt-h3: 24px;
     --txt-body: 18px;
-    --max-width: 'none';
+    --max-width: none;
   }
 
   .no-mobile{display: none!important;}

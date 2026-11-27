@@ -59,29 +59,55 @@
 .ProjectHeader .description{
     width: 100%;
     display: flex;  flex-direction: column;
+    gap: 40px;
+}
+
+.ProjectHeader .description-content{
+    width: 100%;
+    display: flex;  flex-direction: column;
     gap: var(--gap);
     max-width: var(--max-width);
+}
+
+/* Tablet + Desktop: nav + h1 + description + media fill exactly one viewport
+   (100svh - nav - 32px gap - h1 height - 32px between h1 and text) */
+@media (min-width: 768px) {
+    .ProjectHeader .description.has-media{
+        min-height: calc(100svh - var(--nav-height) - 32px - var(--txt-h1) - 32px);
+    }
+
+    .ProjectHeader .media{
+        position: relative;
+        flex: 1 1 auto;
+        min-height: 240px;
+    }
+
+    .ProjectHeader .media img{
+        position: absolute;
+        inset: 0;
+        width: 100%; height: 100%;
+        max-width: none;
+        margin: 0;
+        object-fit: contain;
+    }
 }
 
 
 .ProjectHeader .buttons-container{
     display: flex; gap: var(--gap);
 
-    & button{
+    & .bttn{
         background-color: var(--grey);
+        border-color: var(--grey);
         color: white;
-        padding: 0;
-
-        & a{
-            font-size: calc(var(--txt-body)/1.3);
-            font-weight: 700;
-            width: 100%; height: 100%; 
-            border-radius: 50px;
-            padding: 8px 16px;
-        }
+        font-size: calc(var(--txt-body)/1.3);
+        font-weight: 700;
+        border-radius: 50px;
+        padding: 8px 16px;
+        cursor: url('/portfolio/img/cursor-pointer.png') 20 10, auto;
     }
 
-    & button.github{
+    & .bttn.github{
         background-color: white;
         color: var(--grey);
     }
@@ -92,11 +118,11 @@
 
 /* Hover */
 @media (hover: hover) and (pointer: fine) {
-    .ProjectHeader .buttons-container button:hover{
+    .ProjectHeader .buttons-container .bttn:hover{
         background-color: var(--orange);
         border-color: var(--orange);
     }
-    .ProjectHeader .buttons-container button.github:hover{
+    .ProjectHeader .buttons-container .bttn.github:hover{
         background-color: white;
         color: var(--orange);
     }
@@ -104,7 +130,7 @@
 
 /* Desktop */
 @media (min-width: 1440px){
-    .ProjectHeader .buttons-container button a{font-weight: 500;}
+    .ProjectHeader .buttons-container .bttn{font-weight: 500;}
 }
 
 /* Tablet */
@@ -114,6 +140,9 @@
 
 /* Mobile */
 @media (max-width: 767px) {
+    /* keep the old spacing between text and image on mobile */
+    .ProjectHeader .description{ gap: calc(var(--padding) + var(--gap-main));}
+
     .ProjectHeader{
         & .projectname-container{ margin-top: 6svh;}
 

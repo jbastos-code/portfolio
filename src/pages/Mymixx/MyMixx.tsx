@@ -8,6 +8,9 @@ import Footer from '../../components/Footer/Footer'
 import NextProject from '../../components/NextProject/NextProject'
 import MotionImage from '../../components/MotionImage/MotionImage'
 import Typo from '../../components/Typo/Typo'
+import DesignToggle from '../../components/Project/DesignToggle/DesignToggle'
+import DesignMd from '../../components/Project/DesignMd/DesignMd'
+import mymixxDesignMd from './DESIGN.md?raw'
 
 function MyMixx() {
 
@@ -39,23 +42,22 @@ function MyMixx() {
               { key: 'icon-js', label: 'JavaScript'},
               { key: 'icon-figma', label: 'Figma'},
               { key: 'icon-git', label: 'Github'},
-            ]} */
-            linkGithub='https://github.com/Jaobast/MyMixx'
-            linkWebsite='https://jaobast.github.io/MyMixx/'
+              linkGithub='https://github.com/jbastos-code/MyMixx'
+              linkWebsite='https://jbastos-code.github.io/MyMixx/'
+              ]} */
+            media={<>
+              <MotionImage
+                img='/portfolio/project/MyMixx/bilder/07.webp'
+                noMobile
+                extraClass='img-05'
+              />
+              <MotionImage
+                img='/portfolio/project/MyMixx/bilder/09.webp'
+                padding
+                onlyMobile
+              />
+            </>}
           />
-
-          <MotionImage
-            img='/portfolio/project/MyMixx/bilder/07.png'
-            noMobile
-            extraClass='img-05'
-          />
-
-          <MotionImage
-            img='/portfolio/project/MyMixx/bilder/09.png'
-            padding
-            onlyMobile
-          />
-
 
           <ProjectText
             textTitel='Bunt. Vielfältig. Möglich'
@@ -77,13 +79,20 @@ function MyMixx() {
             </>}
           />
 
-          <img className='img-project padding no-mobile' src="/portfolio/project/MyMixx/bilder/05.png" alt="bild" />
-          <img className='img-project padding only-mobile' src="/portfolio/project/MyMixx/bilder/03.png" alt="bild" />
+          <DesignToggle
+            visual={
+              <>
+                <img loading="lazy" decoding="async" className='img-project padding no-mobile' src="/portfolio/project/MyMixx/bilder/05.webp" alt="bild" />
+                <img loading="lazy" decoding="async" className='img-project padding only-mobile' src="/portfolio/project/MyMixx/bilder/03.webp" alt="bild" />
 
-          <img className='img-project img-04 no-mobile' src="/portfolio/project/MyMixx/bilder/08.png" alt="bild" />
-          <img className='img-project img-02 only-mobile' src="/portfolio/project/MyMixx/bilder/08.png" alt="bild" />
+                <img loading="lazy" decoding="async" className='img-project img-04 no-mobile' src="/portfolio/project/MyMixx/bilder/08.webp" alt="bild" />
+                <img loading="lazy" decoding="async" className='img-project img-02 only-mobile' src="/portfolio/project/MyMixx/bilder/08.webp" alt="bild" />
 
-          <Typo name='Baloo 2' font="'Baloo 2', cursive" />
+                <Typo name='Baloo 2' font="'Baloo 2', cursive" />
+              </>
+            }
+            md={<DesignMd file='mymixx/DESIGN.md' content={mymixxDesignMd} tone='dark' />}
+          />
 
           <ProjectText
             textTitel='Components'
@@ -96,8 +105,8 @@ function MyMixx() {
           />
 
           <div className="img-mobile">
-            <img src="/portfolio/project/MyMixx/bilder/10.png" alt="bild" />
-            <img src="/portfolio/project/MyMixx/bilder/11.png" alt="bild" />
+            <img loading="lazy" decoding="async" src="/portfolio/project/MyMixx/bilder/10.webp" alt="bild" />
+            <img loading="lazy" decoding="async" src="/portfolio/project/MyMixx/bilder/11.webp" alt="bild" />
           </div>
 
           <ProjectText
@@ -119,6 +128,7 @@ function MyMixx() {
           />
 
           <ProjectCode
+            tone='dark'
             lines={[
               {
                 content: <><span className="code-red">const</span> [<span className="code-blue">isAdded</span>, <span className="code-blue">setIsAdded</span>] = <span className="code-red">useState</span>(<span className="code-purple">false</span>)</>
@@ -181,7 +191,7 @@ function MyMixx() {
           />
 
           <div className="img-mobile">
-            <img src="/portfolio/project/MyMixx/bilder/12.png" alt="bild" />
+            <img loading="lazy" decoding="async" src="/portfolio/project/MyMixx/bilder/12.webp" alt="bild" />
           </div>
 
           <ProjectText
@@ -205,6 +215,7 @@ function MyMixx() {
           />
 
           <ProjectCode
+            tone='dark'
             lines={[
               {
                 content: <><span className="code-red">const</span> <span className="code-blue">totalPreis</span> = <span className="code-blue">myMixx</span>.<span className="code-red">reduce</span>((<span className="code-blue">acc</span>, <span className="code-blue">product</span>) =&gt; {'{'}</>
@@ -281,7 +292,7 @@ function MyMixx() {
             ]}
           />
 
-          <img className='img-project img-01' src="/portfolio/project/MyMixx/bilder/13.png" alt="bild" />
+          <img loading="lazy" decoding="async" className='img-project img-01' src="/portfolio/project/MyMixx/bilder/13.webp" alt="bild" />
 
           <ProjectText
             textTheme='Verwendung von JSON zur Sortierung der Produkte'
@@ -317,6 +328,7 @@ function MyMixx() {
           />
 
           <ProjectCode
+            tone='dark'
             lines={[
               {
                 content: <><span className="code-red">const</span> <span className="code-blue">arrayFruechte</span> = [</>
@@ -360,6 +372,7 @@ function MyMixx() {
           />
 
           <ProjectCode
+            tone='dark'
             lines={[
               {
                 content: <><span className="code-blue">arrayFruechte</span><span className="code-red">.forEach</span>(<span className="code-blue">product</span> =&gt; {'{'}</>
@@ -394,7 +407,7 @@ function MyMixx() {
               },
               {
                 gap: 1,
-                content: <>{'\`'}</>
+                content: <>{'`'}</>
               },
               {
                 content: <>{'});'}</>
@@ -404,7 +417,7 @@ function MyMixx() {
 
 
           <MotionImage
-            img='/portfolio/project/MyMixx/bilder/06.png'
+            img='/portfolio/project/MyMixx/bilder/06.webp'
             extraClass='img-06'
           />
 

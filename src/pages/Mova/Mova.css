@@ -9,6 +9,8 @@ html:has(.Mova), body:has(.Mova) {
 }
 
 .Mova{
+    --footer-color: white;
+    
     & .logo-pattern{width: 15vw; margin: 0 auto;}
 
     & h1, h2, h3, main p, .text-bold{color: white;}
@@ -25,4 +27,15 @@ html:has(.Mova), body:has(.Mova) {
 /* Mobile */
 @media (max-width: 767px) {
     .Mova{ & .logo-pattern{width: 30vw;}}
+}
+
+/* View Toggle */
+.Mova .design { --toggle-active-color: #250300; }
+
+/* Language toggle */
+.Mova {
+    --lang-bg: rgb(0 0 0 / 0.16);
+    --lang-color: #fff;
+    --lang-active-bg: #fff;
+    --lang-active-color: #250300;
 }

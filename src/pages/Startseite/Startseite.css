@@ -43,7 +43,9 @@
 
 .Startseite main{
     width: 100%;
-    overflow: hidden;
+    /* clip only horizontally, so the polaroids can grow upwards on hover */
+    overflow-x: clip;
+    overflow-y: visible;
 }
 
 .Startseite .about{

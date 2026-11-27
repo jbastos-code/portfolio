@@ -55,3 +55,11 @@ html:has(.Essencial), body:has(.Essencial) {
     }
   }
 }
+
+/* Language toggle */
+.Essencial {
+    --lang-bg: rgb(0 0 0 / 0.16);
+    --lang-color: #fff;
+    --lang-active-bg: #fff;
+    --lang-active-color: #433023;
+}

@@ -1,23 +1,25 @@
+import { lazy, Suspense } from "react";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./hooks/ScroolToTop";
 import Startseite from "./pages/Startseite/Startseite";
 
-import MyMixx from "./pages/Mymixx/MyMixx";
-import Essencial from "./pages/Essencial/Essencial";
-import Targobank from "./pages/Targobank/Targobank";
-import Caflex from "./pages/Caflex/Caflex";
-import Praxis from "./pages/Praxis/Praxis";
-import Mova from "./pages/Mova/Mova";
-import Dabei from "./pages/Dabei/Dabei";
-import Gleichklang from "./pages/Gleichklang/Gleichklang";
+const MyMixx = lazy(() => import("./pages/Mymixx/MyMixx"));
+const Essencial = lazy(() => import("./pages/Essencial/Essencial"));
+const Targobank = lazy(() => import("./pages/Targobank/Targobank"));
+const Caflex = lazy(() => import("./pages/Caflex/Caflex"));
+const Praxis = lazy(() => import("./pages/Praxis/Praxis"));
+const Mova = lazy(() => import("./pages/Mova/Mova"));
+const Dabei = lazy(() => import("./pages/Dabei/Dabei"));
+const Gleichklang = lazy(() => import("./pages/Gleichklang/Gleichklang"));
 
-import Cv from "./pages/Cv/Cv";
+const Cv = lazy(() => import("./pages/Cv/Cv"));
 
 function App() {
 
   return (
     <HashRouter>
       <ScrollToTop/>
+      <Suspense fallback={null}>
       <Routes>
         <Route path="/" element={<Startseite />} />
         <Route path="/MyMixx" element={<MyMixx />} />
@@ -30,6 +32,7 @@ function App() {
         <Route path="/Gleichklang" element={<Gleichklang />} />
         <Route path="/Cv" element={<Cv />} />
       </Routes>
+      </Suspense>
     </HashRouter>
   )
 }

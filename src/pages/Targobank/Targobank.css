@@ -12,3 +12,11 @@ html:has(.Targobank), body:has(.Targobank) {
     & h1, h2, h3, main p, .text-bold{color: white;}
     & main p{opacity: 0.6;}
 }
+
+/* Language toggle */
+.Targobank {
+    --lang-bg: rgb(0 0 0 / 0.16);
+    --lang-color: #fff;
+    --lang-active-bg: #fff;
+    --lang-active-color: #203057;
+}
