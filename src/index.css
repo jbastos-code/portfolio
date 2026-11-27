@@ -18,6 +18,9 @@
   --blue: #008DFF;
   --green: #37C25C;
   --orange: #F14600;
+
+  /* accent of the current project (eyebrows above titles). Override it in each project's CSS */
+  --color-accent: var(--orange);
   --grey: #818181;
   --baby: #d6d9ec;
 

@@ -10,6 +10,7 @@ html:has(.Caflex), body:has(.Caflex) {
 
 .Caflex{
     --footer-color: white;
+    --color-accent: #CAD2E4;
     
     & h1, h2, h3, main p, .text-bold{color: white;}
     & main p{opacity: 0.6;}

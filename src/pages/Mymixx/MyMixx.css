@@ -3,6 +3,9 @@ html:has(.MyMixx), body:has(.MyMixx) {
 }
 
 .MyMixx{
+    /* accent for eyebrows: every MyMixx brand color is too light on the green page
+       (orange 1.6:1, yellow/blue 1.2:1), so black is the only readable option (10.6:1) */
+    --color-accent: #000;
     & main p{ color: black; opacity: 0.6;}
 }
 

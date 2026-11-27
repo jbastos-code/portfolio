@@ -2,7 +2,6 @@ import './Mova.css'
 import '../Projectpage.css'
 import Nav from '../../components/Nav/Nav'
 import ProjectHeader from '../../components/Project/Header/ProjectHeader'
-import ProjectFacts from '../../components/Project/Facts/ProjectFacts'
 import { ProjectText, ProjectTextEn } from '../../components/ProjectText/ProjectText'
 import Footer from '../../components/Footer/Footer'
 import NextProject from '../../components/NextProject/NextProject'
@@ -42,14 +41,6 @@ function Mova() {
           </>}
         />
 
-        {/* TODO: confirm the role and add further tools */}
-        <ProjectFacts
-          facts={[
-            { label: 'Projektart', labelEn: 'Project type', value: 'Konzeptprojekt, Online-Shop', valueEn: 'Concept project, online shop' },
-            { label: 'Rolle', labelEn: 'Role', value: 'UX/UI Design' },
-            { label: 'Tools', value: 'Figma' },
-          ]}
-        />
 
         {/* ---------- Ausgangslage ---------- */}
         {/* TODO: optionally add how the project started (own project, course, fictional client) */}
@@ -62,25 +53,7 @@ function Mova() {
             Für ein Produkt, dessen Wert in Form, Material und Handarbeit liegt, ist beides ein Problem: Im ersten Fall fehlt die Wertigkeit, im zweiten die Orientierung.
             <br /><br />
             Die zentrale Frage für Mova lautete deshalb: Wie gestaltet man einen Shop, der so ruhig wirkt wie ein Galerieraum und trotzdem so klar funktioniert wie ein guter Online-Shop?
-          </>}
-        />
-        <ProjectTextEn
-          textTitel='Handmade needs calm – and orientation'
-          textSubtitel='The challenge'
-          textParagraph={<>
-            Handmade ceramics are often sold online in one of two extremes: crowded marketplaces where a single piece gets lost between banners, discounts and recommendations – or pure gallery websites that look beautiful but make shopping hard.
             <br /><br />
-            For a product whose value lies in its shape, material and craftsmanship, both are a problem: the first lacks a sense of value, the second lacks orientation.
-            <br /><br />
-            So the key question for Mova was: how do you design a shop that feels as calm as a gallery and still works as clearly as a good online store?
-          </>}
-        />
-
-        {/* ---------- Ziele ---------- */}
-        <ProjectText
-          textTitel='Was Mova leisten muss'
-          textSubtitel='Ziele'
-          textParagraph={<>
             <strong>Nutzer:innen-Ziele</strong>
             <br />– Schnell einen Überblick über das Sortiment bekommen und eine Vase finden, die zum eigenen Raum passt.
             <br />– Größe, Material und Farbe einer Vase vor dem Kauf sicher einschätzen.
@@ -93,9 +66,15 @@ function Mova() {
           </>}
         />
         <ProjectTextEn
-          textTitel='What Mova has to deliver'
-          textSubtitel='Goals'
+          textTitel='Handmade needs calm – and orientation'
+          textSubtitel='The challenge'
           textParagraph={<>
+            Handmade ceramics are often sold online in one of two extremes: crowded marketplaces where a single piece gets lost between banners, discounts and recommendations – or pure gallery websites that look beautiful but make shopping hard.
+            <br /><br />
+            For a product whose value lies in its shape, material and craftsmanship, both are a problem: the first lacks a sense of value, the second lacks orientation.
+            <br /><br />
+            So the key question for Mova was: how do you design a shop that feels as calm as a gallery and still works as clearly as a good online store?
+            <br /><br />
             <strong>User goals</strong>
             <br />– Get a quick overview of the range and find a vase that fits their own space.
             <br />– Confidently judge a vase's size, material and color before buying.
@@ -164,27 +143,6 @@ function Mova() {
           </>}
         />
 
-        {/* ---------- User Flow ---------- */}
-        {/* TODO: add a sitemap or user flow diagram as an image */}
-        <ProjectText
-          textTitel='Von der Kollektion zur Bestellung'
-          textSubtitel='User Flow'
-          textParagraph={<>
-            Der Hauptpfad hat fünf Schritte: Startseite → Store mit allen Kollektionen → Produktseite → Einkaufstasche → Checkout (Versand, Adresse, Zahlung).
-            <br /><br />
-            Kollektionen sind das ordnende Prinzip. Jede Vase trägt ihren Kollektionsnamen schon im Grid, und auf der Produktseite führen weitere Stücke derselben Kollektion zurück ins Stöbern. So entsteht keine Sackgasse: Wer eine Vase mag, findet direkt ihre „Verwandten“.
-          </>}
-        />
-        <ProjectTextEn
-          textTitel='From collection to order'
-          textSubtitel='User Flow'
-          textParagraph={<>
-            The main path has five steps: home → store with all collections → product page → shopping bag → checkout (shipping, address, payment).
-            <br /><br />
-            Collections are the organising principle. Every vase shows its collection name right in the grid, and on the product page more pieces from the same collection lead back into browsing. There is no dead end: if you like a vase, you immediately find its "relatives".
-          </>}
-        />
-
         {/* ---------- Design ---------- */}
         <ProjectText
           textTitel='Ästhetik. Erdig. Zeitlos'
@@ -236,34 +194,6 @@ function Mova() {
             </>
           }
           md={<DesignMd file='mova/DESIGN.md' content={movaDesignMd} />}
-        />
-
-        {/* ---------- Barrierefreiheit ---------- */}
-        <ProjectText
-          textTitel='Ruhig, aber lesbar'
-          textSubtitel='Barrierefreiheit'
-          textParagraph={<>
-            Eine dunkle, warme Fläche wirkt atmosphärisch – aber nur, wenn der Text darauf lesbar bleibt. Deshalb habe ich jede Textfarbe gegen den Ceramic-Hintergrund geprüft. WCAG AA verlangt mindestens 4.5:1 für normalen Text.
-            <br /><br />
-            – <strong>Weiß</strong> 12.3:1 – Standard für Text und Überschriften
-            <br />– <strong>Muted #EBCECC</strong> 8.3:1 – Bildunterschriften und Meta-Texte
-            <br />– <strong>Accent #92BFD8</strong> 6.2:1 – Labels und Highlights
-            <br />– <strong>Sand #A3948C</strong> 4.2:1 – nur für Flächen und Rahmen, nicht für kleinen Text
-            <br />– <strong>Dark #02304B</strong> 1.1:1 – nie als Text auf Ceramic, nur als Button-Fläche mit weißem Text (13.7:1)
-          </>}
-        />
-        <ProjectTextEn
-          textTitel='Calm, but readable'
-          textSubtitel='Accessibility'
-          textParagraph={<>
-            A dark, warm surface feels atmospheric – but only if the text on it stays readable. That's why I checked every text color against the Ceramic background. WCAG AA requires at least 4.5:1 for normal text.
-            <br /><br />
-            – <strong>White</strong> 12.3:1 – default for text and headings
-            <br />– <strong>Muted #EBCECC</strong> 8.3:1 – captions and meta text
-            <br />– <strong>Accent #92BFD8</strong> 6.2:1 – labels and highlights
-            <br />– <strong>Sand #A3948C</strong> 4.2:1 – only for surfaces and borders, not for small text
-            <br />– <strong>Dark #02304B</strong> 1.1:1 – never as text on Ceramic, only as a button surface with white text (13.7:1)
-          </>}
         />
 
         {/* ---------- Screens ---------- */}

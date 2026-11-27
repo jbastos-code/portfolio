@@ -10,10 +10,11 @@ html:has(.Mova), body:has(.Mova) {
 
 .Mova{
     --footer-color: white;
+    --color-accent: #92BFD8;
     
     & .logo-pattern{width: 15vw; margin: 0 auto;}
 
-    & h1, h2, h3, main p, .text-bold, .ProjectFacts{color: white;}
+    & h1, h2, h3, main p, .text-bold{color: white;}
     & main p{opacity: 0.6;}
 }
 
